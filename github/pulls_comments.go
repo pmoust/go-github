@@ -20,6 +20,7 @@ type PullRequestComment struct {
 	User      *User      `json:"user,omitempty"`
 	CreatedAt *time.Time `json:"created_at,omitempty"`
 	UpdatedAt *time.Time `json:"updated_at,omitempty"`
+	InReplyTo *int       `json:"in_reply_to,omitempty`
 }
 
 func (p PullRequestComment) String() string {
